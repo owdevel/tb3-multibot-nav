@@ -1,10 +1,10 @@
 <launch>
   <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
-  <arg name="tb3_ns"  default="tb3_0"/>
-  <arg name="initial_pose_x" default="-2.0"/>
-  <arg name="initial_pose_y" default="-0.5"/>
-  <arg name="initial_pose_a" default=" 0.0"/>
-  <arg name="map_file" default="$(find turtlebot3_navigation)/maps/map.yaml"/>
+  <arg name="tb3_ns"  default="tb3"/>
+  <arg name="initial_pose_x" default="0.0"/>
+  <arg name="initial_pose_y" default="0.0"/>
+  <arg name="initial_pose_a" default="0.0"/>
+  <arg name="map_file" default="$(find tb3-multibot-nav)/maps/map.yaml"/>
 
   <!-- <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)">
     <param name="frame_id" value="/map" />
@@ -15,7 +15,7 @@
     <param name="tf_prefix" value="$(arg tb3_ns)"/>
 
     <include file="$(find tb3-multibot-nav)/launch/turtlebot3_navigation.launch">
-      <arg name="map_file" value="/home/owen/map.yaml"/>
+      <arg name="map_file" value="$(arg map_file)"/>
       <arg name="model" value="$(arg model)"/>
       <arg name="tb3_ns" value="$(arg tb3_ns)"/>
       <arg name="initial_pose_x" value="$(arg initial_pose_x)"/>

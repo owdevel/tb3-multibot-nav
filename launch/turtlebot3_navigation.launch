@@ -37,6 +37,6 @@
   <!-- rviz -->
   <group if="$(arg open_rviz)"> 
     <node pkg="rviz" type="rviz" name="rviz" required="true"
-          args="-d $(find tb3-multibot-nav)/rviz/tb3_0.rviz"/>
+          args="-d $(find tb3-multibot-nav)/rviz/$(arg tb3_ns).rviz"/>
   </group>
 </launch>
