@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>tb3-multibot-nav</name>
+  <version>0.0.1</version>
+  <description>
+    Package showing a way of demonstrating multi-bot navigation using the ROS Navigation stack and turtlebot3.
+    Based off the TurtleBot3 simulation world for ROS Melodic.
+  </description>
+  <license>MIT</license>
+  <author email="owdevel@gmail.com">Owen Mak</author>
+  <maintainer email="owdevel@gmail.com">Owen Mak</maintainer>
+  <url type="repository">https://github.com/ROBOTIS-GIT/turtlebot3_simulations</url>
+  <url type="bugtracker">https://github.com/ROBOTIS-GIT/turtlebot3_simulations/issues</url>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf</depend>
+  <depend>gazebo_ros</depend>
+  <exec_depend>gazebo</exec_depend>
+  <exec_depend>turtlebot3_description</exec_depend>
+  <export>
+    <gazebo_ros gazebo_media_path="${prefix}"/>
+    <gazebo_ros gazebo_model_path="${prefix}/models"/>
+  </export>
+</package>
