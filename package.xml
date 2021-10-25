@@ -9,8 +9,8 @@
   <license>MIT</license>
   <author email="owdevel@gmail.com">Owen Mak</author>
   <maintainer email="owdevel@gmail.com">Owen Mak</maintainer>
-  <url type="repository">https://github.com/ROBOTIS-GIT/turtlebot3_simulations</url>
-  <url type="bugtracker">https://github.com/ROBOTIS-GIT/turtlebot3_simulations/issues</url>
+  <url type="repository">https://github.com/owdevel/tb3-multibot-nav</url>
+  <url type="bugtracker">https://github.com/owdevel/tb3-multibot-nav/issues</url>
   <buildtool_depend>catkin</buildtool_depend>
   <depend>roscpp</depend>
   <depend>rospy</depend>
