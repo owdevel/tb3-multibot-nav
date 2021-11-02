@@ -41,8 +41,8 @@
     <param name="odom_alpha3"               value="0.1"/>
     <param name="odom_alpha4"               value="0.1"/>
     <param name="scan"                      value="/$(arg tb3_ns)/scan"/>
-    <param name="odom_frame_id"             value="/$(arg tb3_ns)/odom"/>
-    <param name="base_frame_id"             value="/$(arg tb3_ns)/base_footprint"/>
+    <param name="odom_frame_id"             value="/$(arg tb3_ns)_tf/odom"/>
+    <param name="base_frame_id"             value="/$(arg tb3_ns)_tf/base_footprint"/>
     <param name="global_frame_id"           value="map"/>
 
   </node>

@@ -4,6 +4,7 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
+        - /RobotModel1
         - /TF1/Frames1
         - /TF1/Tree1
       Splitter Ratio: 0.5
@@ -96,7 +97,7 @@ Visualization Manager:
           Value: true
       Name: RobotModel
       Robot Description: robot_description
-      TF Prefix: /tb3_0
+      TF Prefix: tb3_0_tf
       Update Interval: 0
       Value: true
       Visual Enabled: true
@@ -357,5 +358,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1279
-  X: 68
+  X: 67
   Y: 28

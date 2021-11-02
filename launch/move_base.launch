@@ -9,8 +9,8 @@
   <!-- move_base -->
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
     <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
-    <rosparam file="$(find turtlebot3_navigation)/param/costmap_common_params_$(arg model).yaml" command="load" ns="global_costmap" />
-    <rosparam file="$(find turtlebot3_navigation)/param/costmap_common_params_$(arg model).yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find tb3-multibot-nav)/param/costmap_common_params_$(arg model).yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find tb3-multibot-nav)/param/costmap_common_params_$(arg model).yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find turtlebot3_navigation)/param/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find turtlebot3_navigation)/param/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find turtlebot3_navigation)/param/move_base_params.yaml" command="load" />
@@ -19,9 +19,9 @@
     <!-- <remap from="odom" to="$(arg odom_topic)"/> -->
     <param name="DWAPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />
     <remap from="cmd_vel" to="/$(arg tb3_ns)/cmd_vel"/>
-    <param name="global_costmap/robot_base_frame" value="$(arg tb3_ns)/base_footprint"/>
-    <param name="local_costmap/robot_base_frame" value="$(arg tb3_ns)/base_footprint"/>
-    <param name="local_costmap/global_frame" value="$(arg tb3_ns)/odom"/>
+    <param name="global_costmap/robot_base_frame" value="$(arg tb3_ns)_tf/base_footprint"/>
+    <param name="local_costmap/robot_base_frame" value="$(arg tb3_ns)_tf/base_footprint"/>
+    <param name="local_costmap/global_frame" value="$(arg tb3_ns)_tf/odom"/>
     <!--<remap from="map" to="/map"/>-->
   </node>
 </launch>
