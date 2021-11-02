@@ -1,8 +1,9 @@
 # tb3-multibot-nav
 
-A rudimentary naive solution to running multiple navigation stacks within ROS for the TurtleBot3. There are probably better ways to do this, if you know a better way to implement, please let me know.
+A rudimentary naive solution to running multiple navigation stacks within ROS for the TurtleBot3. There are probably better ways to do this, if you know a better way to implement, please let me know. This is intended as a guide/reference to implement similar systems.
 
 The implementation copies the files from the turtlebot3 packages when they needed to be edited. Files changes were kept as minimal as possible except for when needing to pass parameters down through the multiple include chains.
+
 
 ## Installation
 Requires
